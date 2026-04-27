@@ -1,0 +1,907 @@
+<http://www.uoc.edu/ontologies/meddevice-eu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.uoc.edu/ontologies/meddevice-eu> <http://purl.org/dc/terms/created> "2025-04-17" .
+<http://www.uoc.edu/ontologies/meddevice-eu> <http://purl.org/dc/terms/creator> "Oriol Ramisa"@en .
+<http://www.uoc.edu/ontologies/meddevice-eu> <http://www.w3.org/2000/01/rdf-schema#comment> "European Medical Devices and IVD Regulatory Catalogue Ontology based on MDR (EU 2017/745) and IVDR (EU 2017/746)"@en .
+<http://www.uoc.edu/ontologies/meddevice-eu> <http://www.w3.org/2000/01/rdf-schema#label> "MedDevice-EU Ontology"@en .
+<http://www.uoc.edu/ontologies/meddevice-eu> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#affectsDeviceType
+<http://www.uoc.edu/ontologies/meddevice-eu#affectsDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Risk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to the type of device it typically affects."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "affects device type"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#hasAssociatedRisk
+<http://www.uoc.edu/ontologies/meddevice-eu#hasAssociatedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasAssociatedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#Risk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the IMDRF risk category."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#label> "has associated risk"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#hasDevice
+<http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the device involved."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> <http://www.w3.org/2000/01/rdf-schema#label> "has device"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer
+<http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its manufacturer."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass
+<http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its regulatory risk classification."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "has risk class"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo
+<http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an FSCA to the incident it addresses."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> <http://www.w3.org/2000/01/rdf-schema#label> "is response to"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#registeredInCountry
+<http://www.uoc.edu/ontologies/meddevice-eu#registeredInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#registeredInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#registeredInCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> .
+<http://www.uoc.edu/ontologies/meddevice-eu#registeredInCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#Country> .
+<http://www.uoc.edu/ontologies/meddevice-eu#registeredInCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a manufacturer to the country of registration."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#registeredInCountry> <http://www.w3.org/2000/01/rdf-schema#label> "registered in country"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#regulatedBy
+<http://www.uoc.edu/ontologies/meddevice-eu#regulatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#regulatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#regulatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> .
+<http://www.uoc.edu/ontologies/meddevice-eu#regulatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#CompetentAuthority> .
+<http://www.uoc.edu/ontologies/meddevice-eu#regulatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a manufacturer to its competent authority."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#regulatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "regulated by"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#reportedBy
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the entity that reported it."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "reported by"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#reportedInCountry
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedInCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedInCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.uoc.edu/ontologies/meddevice-eu#Country> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedInCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the country where it was reported."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportedInCountry> <http://www.w3.org/2000/01/rdf-schema#label> "reported in country"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#actionDate
+<http://www.uoc.edu/ontologies/meddevice-eu#actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#actionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#actionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#actionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the FSCA was initiated."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#actionDate> <http://www.w3.org/2000/01/rdf-schema#label> "action date"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#authorizationNumber
+<http://www.uoc.edu/ontologies/meddevice-eu#authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> .
+<http://www.uoc.edu/ontologies/meddevice-eu#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The national authorization number of the manufacturer."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "authorization number"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#closureDate
+<http://www.uoc.edu/ontologies/meddevice-eu#closureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#closureDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#closureDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#closureDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the FSCA was closed (optional, empty if status=Open)."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#closureDate> <http://www.w3.org/2000/01/rdf-schema#label> "closure date"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken
+<http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether a corrective action (FSCA) has been taken in response."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#label> "corrective action taken"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#countriesAffected
+<http://www.uoc.edu/ontologies/meddevice-eu#countriesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#countriesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Countries affected by the FSCA."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#countriesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "countries affected"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#deviceName
+<http://www.uoc.edu/ontologies/meddevice-eu#deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#deviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#deviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#deviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "The commercial name of the medical device."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "device name"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#devicesAffected
+<http://www.uoc.edu/ontologies/meddevice-eu#devicesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#devicesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Number or description of devices affected by the FSCA."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "devices affected"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#eudamedFscaRef
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedFscaRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedFscaRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#comment> "The official EUDAMED reference number for the FSCA."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED FSCA reference"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#eudamedIncidentRef
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedIncidentRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedIncidentRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#comment> "The official EUDAMED reference number for the incident."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED incident reference"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#eudamedSrn
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedSrn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedSrn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedSrn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedSrn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedSrn> <http://www.w3.org/2000/01/rdf-schema#comment> "The Single Registration Number assigned by EUDAMED."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#eudamedSrn> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED SRN"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#eventDate
+<http://www.uoc.edu/ontologies/meddevice-eu#eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#eventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the adverse event occurred."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#eventDate> <http://www.w3.org/2000/01/rdf-schema#label> "event date"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#hasIncidentReported
+<http://www.uoc.edu/ontologies/meddevice-eu#hasIncidentReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasIncidentReported> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasIncidentReported> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasIncidentReported> <http://www.w3.org/2000/01/rdf-schema#comment> "Inferred property: whether this device has had an incident with corrective action."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasIncidentReported> <http://www.w3.org/2000/01/rdf-schema#label> "has incident reported"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#hasOpenFSCA
+<http://www.uoc.edu/ontologies/meddevice-eu#hasOpenFSCA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasOpenFSCA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasOpenFSCA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasOpenFSCA> <http://www.w3.org/2000/01/rdf-schema#comment> "Inferred property: whether this device currently has an open FSCA."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#hasOpenFSCA> <http://www.w3.org/2000/01/rdf-schema#label> "has open FSCA"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#imdrfCode
+<http://www.uoc.edu/ontologies/meddevice-eu#imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Risk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The IMDRF adverse event terminology code."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "IMDRF code"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose
+<http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The intended medical purpose of the device."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "intended purpose"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#isActive
+<http://www.uoc.edu/ontologies/meddevice-eu#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the device is an active device."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is active"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#isImplantable
+<http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the device is intended to be implanted."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "is implantable"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#isIvd
+<http://www.uoc.edu/ontologies/meddevice-eu#isIvd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isIvd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isIvd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isIvd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isIvd> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the device is an in vitro diagnostic."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#isIvd> <http://www.w3.org/2000/01/rdf-schema#label> "is IVD"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#isReusable
+<http://www.uoc.edu/ontologies/meddevice-eu#isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#isReusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the device is intended for reuse."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "is reusable"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#outcome
+<http://www.uoc.edu/ontologies/meddevice-eu#outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#outcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#outcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "The clinical outcome of the incident."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#outcome> <http://www.w3.org/2000/01/rdf-schema#label> "outcome"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#patientAge
+<http://www.uoc.edu/ontologies/meddevice-eu#patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "The age of the patient involved in the incident (optional)."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "patient age"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#patientSex
+<http://www.uoc.edu/ontologies/meddevice-eu#patientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientSex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientSex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "The biological sex of the patient: Male or Female (optional)."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#patientSex> <http://www.w3.org/2000/01/rdf-schema#label> "patient sex"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#probability
+<http://www.uoc.edu/ontologies/meddevice-eu#probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#probability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Risk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#probability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#probability> <http://www.w3.org/2000/01/rdf-schema#comment> "The probability of the risk: High, Medium, or Low."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#probability> <http://www.w3.org/2000/01/rdf-schema#label> "probability"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#reportDate
+<http://www.uoc.edu/ontologies/meddevice-eu#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the incident was reported."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "report date"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#scope
+<http://www.uoc.edu/ontologies/meddevice-eu#scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#scope> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#scope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#scope> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the scope of affected devices."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#severity
+<http://www.uoc.edu/ontologies/meddevice-eu#severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#severity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Risk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#severity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#severity> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity level of the risk: Critical, Serious, or Moderate."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#status
+<http://www.uoc.edu/ontologies/meddevice-eu#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#status> <http://www.w3.org/2000/01/rdf-schema#comment> "The current status of the FSCA: Open or Closed."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#udiDi
+<http://www.uoc.edu/ontologies/meddevice-eu#udiDi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#udiDi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.uoc.edu/ontologies/meddevice-eu#udiDi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#udiDi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.uoc.edu/ontologies/meddevice-eu#udiDi> <http://www.w3.org/2000/01/rdf-schema#comment> "The Unique Device Identifier - Device Identifier as per ISO/IEC 15459."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#udiDi> <http://www.w3.org/2000/01/rdf-schema#label> "UDI-DI"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Country
+<http://schema.org/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Country> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.uoc.edu/ontologies/meddevice-eu#Country> .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#ActiveDevice
+<http://www.uoc.edu/ontologies/meddevice-eu#ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device whose operation depends on a source of electrical energy or power other than that directly generated by the human body or gravity."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Active Device"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#ActiveImplant
+<http://www.uoc.edu/ontologies/meddevice-eu#ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#comment> "An active medical device intended to be totally or partially introduced into the human body."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#label> "Active Implant"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#CompetentAuthority
+<http://www.uoc.edu/ontologies/meddevice-eu#CompetentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "A national regulatory authority responsible for medical device oversight in a Member State."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Competent Authority"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Country
+<http://www.uoc.edu/ontologies/meddevice-eu#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A country, typically an EU Member State or EEA country."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Device
+<http://www.uoc.edu/ontologies/meddevice-eu#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device or in vitro diagnostic device regulated under MDR or IVDR."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#DiagnosticRisk
+<http://www.uoc.edu/ontologies/meddevice-eu#DiagnosticRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Risk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of misdiagnosis due to IVD device inaccuracy."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Risk"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction
+<http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A corrective action taken by a manufacturer for a device it has placed on the market, as defined in MDR Article 2(68)."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Field Safety Corrective Action"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#ImplantableActiveDevice
+<http://www.uoc.edu/ontologies/meddevice-eu#ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#ActiveDevice> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#ImplantableDevice> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that is both implantable and active, e.g. cardiac pacemakers and ventricular assist devices."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Active Device"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#ImplantableDevice
+<http://www.uoc.edu/ontologies/meddevice-eu#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device intended to be totally or partially introduced into the human body by surgical intervention."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Device"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#InSituCorrection
+<http://www.uoc.edu/ontologies/meddevice-eu#InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "An FSCA involving modification of a device at the user site."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "In Situ Correction"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#InVitroDiagnosticDevice
+<http://www.uoc.edu/ontologies/meddevice-eu#InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device intended for the in vitro examination of specimens derived from the human body, regulated under IVDR."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Incident
+<http://www.uoc.edu/ontologies/meddevice-eu#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "A reportable event involving a medical device as defined in MDR Article 87."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#InfectionRisk
+<http://www.uoc.edu/ontologies/meddevice-eu#InfectionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Risk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of infection caused by device contamination or biocompatibility issues."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Infection Risk"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#InjuryRisk
+<http://www.uoc.edu/ontologies/meddevice-eu#InjuryRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Risk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of physical injury to the patient caused by the device."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Injury Risk"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#MalfunctionRisk
+<http://www.uoc.edu/ontologies/meddevice-eu#MalfunctionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Risk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk related to device malfunction or failure of device components."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Malfunction Risk"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer
+<http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "A natural or legal person who manufactures or fully refurbishes a device, as defined in MDR Article 2(30)."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#NearMissIncident
+<http://www.uoc.edu/ontologies/meddevice-eu#NearMissIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An incident that did not result in harm but had the potential to do so."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Near-Miss Incident"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Recall
+<http://www.uoc.edu/ontologies/meddevice-eu#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "An FSCA involving the return of a device to the manufacturer."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Risk
+<http://www.uoc.edu/ontologies/meddevice-eu#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "An identified risk associated with a medical device, categorized according to IMDRF terminology."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#RiskClass
+<http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A regulatory risk classification category assigned to a device under MDR (I, IIa, IIb, III) or IVDR (A, B, C, D)."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Class"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#SafetyAlert
+<http://www.uoc.edu/ontologies/meddevice-eu#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "An FSCA involving a communication to users about a safety issue."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#SelfTestDevice
+<http://www.uoc.edu/ontologies/meddevice-eu#SelfTestDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#InVitroDiagnosticDevice> .
+<http://www.uoc.edu/ontologies/meddevice-eu#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "An IVD device intended to be used by a lay person in a home environment."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Self-Test Device"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#SeriousIncident
+<http://www.uoc.edu/ontologies/meddevice-eu#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An incident that directly or indirectly led to, might have led to or might lead to death or serious deterioration in health."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Serious Incident"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#SingleUseDevice
+<http://www.uoc.edu/ontologies/meddevice-eu#SingleUseDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+<http://www.uoc.edu/ontologies/meddevice-eu#SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device intended to be used on an individual patient during a single procedure and then discarded."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Single Use Device"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#UserNotice
+<http://www.uoc.edu/ontologies/meddevice-eu#UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.uoc.edu/ontologies/meddevice-eu#UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+<http://www.uoc.edu/ontologies/meddevice-eu#UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "An FSCA involving a notice to users about updated usage instructions."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "User Notice"@en .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/France
+<http://dbpedia.org/resource/France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/France> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uoc.edu/ontologies/meddevice-eu#France> .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#France
+# 
+# http://dbpedia.org/resource/Germany
+<http://dbpedia.org/resource/Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Germany> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uoc.edu/ontologies/meddevice-eu#Germany> .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Germany
+# 
+# http://dbpedia.org/resource/Medtronic
+<http://dbpedia.org/resource/Medtronic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Medtronic> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#MAN-001
+# 
+# http://dbpedia.org/resource/Republic_of_Ireland
+<http://dbpedia.org/resource/Republic_of_Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Republic_of_Ireland> <http://www.w3.org/2002/07/owl#sameAs> <http://www.uoc.edu/ontologies/meddevice-eu#Ireland> .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Ireland
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#BfArM
+<http://www.uoc.edu/ontologies/meddevice-eu#BfArM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#BfArM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#CompetentAuthority> .
+<http://www.uoc.edu/ontologies/meddevice-eu#BfArM> <http://www.w3.org/2000/01/rdf-schema#comment> "German national competent authority for medical devices."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#BfArM> <http://www.w3.org/2000/01/rdf-schema#label> "Bundesinstitut fuer Arzneimittel und Medizinprodukte (BfArM)"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#ClassC
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassC> <http://www.w3.org/2000/01/rdf-schema#comment> "High risk class under IVDR."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassC> <http://www.w3.org/2000/01/rdf-schema#label> "Class C"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#ClassD
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassD> <http://www.w3.org/2000/01/rdf-schema#comment> "Highest risk class under IVDR."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassD> <http://www.w3.org/2000/01/rdf-schema#label> "Class D"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#ClassIII
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "Highest risk class under MDR for medical devices."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "Class III"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#ClassIIa
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium-low risk class under MDR."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIa"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#ClassIIb
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#RiskClass> .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium-high risk class under MDR."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIb"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#DEV-001
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#ImplantableActiveDevice> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> <http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> <http://www.uoc.edu/ontologies/meddevice-eu#ClassIII> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.uoc.edu/ontologies/meddevice-eu#deviceName> "HeartMate 3 LVAD" .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose> "Ventricular assist device for end-stage heart failure" .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.uoc.edu/ontologies/meddevice-eu#isActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.uoc.edu/ontologies/meddevice-eu#isIvd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.uoc.edu/ontologies/meddevice-eu#isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.uoc.edu/ontologies/meddevice-eu#udiDi> "(01)00380740009095" .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Ventricular assist device for end-stage heart failure, manufactured by Medtronic."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#DEV-002
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#ActiveImplant> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> <http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> <http://www.uoc.edu/ontologies/meddevice-eu#ClassIII> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.uoc.edu/ontologies/meddevice-eu#deviceName> "Micra AV Transcatheter Pacing System" .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose> "Leadless cardiac pacemaker for atrioventricular synchrony" .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.uoc.edu/ontologies/meddevice-eu#isActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.uoc.edu/ontologies/meddevice-eu#isIvd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.uoc.edu/ontologies/meddevice-eu#isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.uoc.edu/ontologies/meddevice-eu#udiDi> "(01)00380740009112" .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.w3.org/2000/01/rdf-schema#comment> "Leadless cardiac pacemaker for atrioventricular synchrony."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> <http://www.w3.org/2000/01/rdf-schema#label> "Micra AV Transcatheter Pacing System"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#DEV-003
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#ImplantableDevice> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.uoc.edu/ontologies/meddevice-eu#hasManufacturer> <http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.uoc.edu/ontologies/meddevice-eu#hasRiskClass> <http://www.uoc.edu/ontologies/meddevice-eu#ClassIII> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.uoc.edu/ontologies/meddevice-eu#deviceName> "Portico Transcatheter Heart Valve" .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.uoc.edu/ontologies/meddevice-eu#intendedPurpose> "Transcatheter aortic valve replacement (TAVI)" .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.uoc.edu/ontologies/meddevice-eu#isActive> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.uoc.edu/ontologies/meddevice-eu#isIvd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.uoc.edu/ontologies/meddevice-eu#isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.uoc.edu/ontologies/meddevice-eu#udiDi> "(01)00800002222291" .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.w3.org/2000/01/rdf-schema#comment> "Transcatheter aortic valve replacement (TAVI) device."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#DEV-003> <http://www.w3.org/2000/01/rdf-schema#label> "Portico Transcatheter Heart Valve"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#SafetyAlert> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> <http://www.uoc.edu/ontologies/meddevice-eu#INC-001> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.uoc.edu/ontologies/meddevice-eu#actionDate> "2024-02-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.uoc.edu/ontologies/meddevice-eu#countriesAffected> "EU-wide" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.uoc.edu/ontologies/meddevice-eu#devicesAffected> "850" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.uoc.edu/ontologies/meddevice-eu#eudamedFscaRef> "EU-FSCA-2024-000001" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.uoc.edu/ontologies/meddevice-eu#scope> "All HeartMate 3 LVAD units implanted since 2020" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.uoc.edu/ontologies/meddevice-eu#status> "Open" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://purl.org/dc/terms/description> "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk." .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety alert regarding anticoagulation protocol update for HeartMate 3."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA-001 HeartMate 3 anticoagulation alert"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#Recall> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> <http://www.uoc.edu/ontologies/meddevice-eu#INC-002> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.uoc.edu/ontologies/meddevice-eu#actionDate> "2024-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.uoc.edu/ontologies/meddevice-eu#closureDate> "2024-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.uoc.edu/ontologies/meddevice-eu#countriesAffected> "EU-wide + UK" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.uoc.edu/ontologies/meddevice-eu#devicesAffected> "1240" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.uoc.edu/ontologies/meddevice-eu#eudamedFscaRef> "EU-FSCA-2024-000002" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.uoc.edu/ontologies/meddevice-eu#scope> "Micra AV lots manufactured between 2022-09 and 2023-03" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.uoc.edu/ontologies/meddevice-eu#status> "Closed" .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://purl.org/dc/terms/description> "Voluntary recall of affected Micra AV lots due to premature battery depletion. 97% of affected devices successfully replaced." .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.w3.org/2000/01/rdf-schema#comment> "Voluntary recall of Micra AV lots due to premature battery depletion."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#FSCA-002> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA-002 Micra AV battery recall"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#France
+<http://www.uoc.edu/ontologies/meddevice-eu#France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#Country> .
+<http://www.uoc.edu/ontologies/meddevice-eu#France> <http://www.w3.org/2000/01/rdf-schema#comment> "French Republic, EU Member State."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#France> <http://www.w3.org/2000/01/rdf-schema#label> "France"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Germany
+<http://www.uoc.edu/ontologies/meddevice-eu#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#Country> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Germany> <http://www.w3.org/2000/01/rdf-schema#comment> "Federal Republic of Germany, EU Member State."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#Germany> <http://www.w3.org/2000/01/rdf-schema#label> "Germany"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#HPRA
+<http://www.uoc.edu/ontologies/meddevice-eu#HPRA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#HPRA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#CompetentAuthority> .
+<http://www.uoc.edu/ontologies/meddevice-eu#HPRA> <http://www.w3.org/2000/01/rdf-schema#comment> "Irish national competent authority for medical devices."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#HPRA> <http://www.w3.org/2000/01/rdf-schema#label> "Health Products Regulatory Authority (HPRA)"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#INC-001
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#SeriousIncident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#hasAssociatedRisk> <http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> <http://www.uoc.edu/ontologies/meddevice-eu#DEV-001> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#reportedBy> <http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#reportedInCountry> <http://www.uoc.edu/ontologies/meddevice-eu#Germany> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#eudamedIncidentRef> "EU-INC-2024-000001" .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#eventDate> "2024-01-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#outcome> "Serious patient injury - embolic stroke" .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#patientAge> "58"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#patientSex> "Male" .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.uoc.edu/ontologies/meddevice-eu#reportDate> "2024-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://purl.org/dc/terms/description> "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography." .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Patient with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "INC-001 HeartMate 3 thrombosis incident"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#INC-002
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#SeriousIncident> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#hasAssociatedRisk> <http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> <http://www.uoc.edu/ontologies/meddevice-eu#DEV-002> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#reportedBy> <http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#reportedInCountry> <http://www.uoc.edu/ontologies/meddevice-eu#France> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#eudamedIncidentRef> "EU-INC-2024-000002" .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#eventDate> "2024-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#outcome> "Device malfunction - premature battery depletion" .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#patientAge> "72"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#patientSex> "Female" .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.uoc.edu/ontologies/meddevice-eu#reportDate> "2024-02-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://purl.org/dc/terms/description> "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification." .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.w3.org/2000/01/rdf-schema#comment> "Micra AV pacemaker reached replacement indicator 14 months early."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#INC-002> <http://www.w3.org/2000/01/rdf-schema#label> "INC-002 Micra AV battery depletion incident"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#Ireland
+<http://www.uoc.edu/ontologies/meddevice-eu#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#Country> .
+<http://www.uoc.edu/ontologies/meddevice-eu#Ireland> <http://www.w3.org/2000/01/rdf-schema#comment> "Republic of Ireland, EU Member State."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#Ireland> <http://www.w3.org/2000/01/rdf-schema#label> "Ireland"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#MAN-001
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://www.uoc.edu/ontologies/meddevice-eu#registeredInCountry> <http://www.uoc.edu/ontologies/meddevice-eu#Ireland> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://www.uoc.edu/ontologies/meddevice-eu#regulatedBy> <http://www.uoc.edu/ontologies/meddevice-eu#HPRA> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://www.uoc.edu/ontologies/meddevice-eu#authorizationNumber> "IE/2017/001234" .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://www.uoc.edu/ontologies/meddevice-eu#eudamedSrn> "SRN-IE-MED-0001" .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Global medical device manufacturer headquartered in Ireland."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://xmlns.com/foaf/0.1/mbox> "regulatory@medtronic.com" .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-001> <http://xmlns.com/foaf/0.1/name> "Medtronic plc" .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#MAN-002
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#Manufacturer> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://www.uoc.edu/ontologies/meddevice-eu#registeredInCountry> <http://www.uoc.edu/ontologies/meddevice-eu#Germany> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://www.uoc.edu/ontologies/meddevice-eu#regulatedBy> <http://www.uoc.edu/ontologies/meddevice-eu#BfArM> .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://www.uoc.edu/ontologies/meddevice-eu#authorizationNumber> "DE/2017/005678" .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://www.uoc.edu/ontologies/meddevice-eu#eudamedSrn> "SRN-DE-MED-0002" .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://www.w3.org/2000/01/rdf-schema#comment> "Global medical device and diagnostics manufacturer."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://www.w3.org/2000/01/rdf-schema#label> "Abbott Medical Devices"@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://xmlns.com/foaf/0.1/mbox> "regulatory@abbott.com" .
+<http://www.uoc.edu/ontologies/meddevice-eu#MAN-002> <http://xmlns.com/foaf/0.1/name> "Abbott Medical Devices" .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#RSK-001
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#MalfunctionRisk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> <http://www.uoc.edu/ontologies/meddevice-eu#imdrfCode> "A0101" .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> <http://www.uoc.edu/ontologies/meddevice-eu#probability> "Low" .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> <http://www.uoc.edu/ontologies/meddevice-eu#severity> "Critical" .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> <http://purl.org/dc/terms/description> "Complete loss of electrical function leading to device shutdown" .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Complete loss of electrical function leading to device shutdown."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> <http://www.w3.org/2000/01/rdf-schema#label> "Device failure - electrical"@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-001> <http://www.w3.org/2004/02/skos/core#prefLabel> "Device failure - electrical"@en .
+# 
+# http://www.uoc.edu/ontologies/meddevice-eu#RSK-003
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.uoc.edu/ontologies/meddevice-eu#InjuryRisk> .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> <http://www.uoc.edu/ontologies/meddevice-eu#imdrfCode> "A0201" .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> <http://www.uoc.edu/ontologies/meddevice-eu#probability> "Low" .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> <http://www.uoc.edu/ontologies/meddevice-eu#severity> "Critical" .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> <http://purl.org/dc/terms/description> "Thrombus formation on device surface causing embolic events" .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> <http://www.w3.org/2000/01/rdf-schema#comment> "Thrombus formation on device surface causing embolic events."@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> <http://www.w3.org/2000/01/rdf-schema#label> "Thrombosis - device-related"@en .
+<http://www.uoc.edu/ontologies/meddevice-eu#RSK-003> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thrombosis - device-related"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid16 <http://www.w3.org/2003/11/swrl#body> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#isActive> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid20 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#isImplantable> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid22 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/2003/11/swrl#head> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#ImplantableActiveDevice> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid25 <http://www.w3.org/2003/11/swrl#body> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> "Open" .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#status> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#i> .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid31 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#isResponseTo> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid33 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#FieldSafetyCorrectiveAction> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/2003/11/swrl#head> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#hasOpenFSCA> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid5 <http://www.w3.org/2003/11/swrl#body> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid7 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#correctiveActionTaken> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid9 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#hasDevice> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid11 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#Incident> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid13 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#Device> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid5 <http://www.w3.org/2003/11/swrl#head> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid15 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.uoc.edu/ontologies/meddevice-eu#hasIncidentReported> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
